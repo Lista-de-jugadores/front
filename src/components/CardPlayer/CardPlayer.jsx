@@ -6,8 +6,8 @@ const CardPlayer = ({ name, id, balance, status, avatar }) => {
   return (
     <>
       <div className='cardplayer-container'>
-        <img src={card} alt={"img"}/>
-        <img className='cardplayer-graph' src={graph} alt={"img"}/>
+        <img className='cardplayer-card' src={card} alt={"img"} />
+        <img className='cardplayer-graph' src={graph} alt={"img"} />
         <h3 className='cardplayer-name' >{name}</h3>
         <h3 className='cardplayer-id' >ID:{id}</h3>
         <h3 className='cardplayer-balance' >{balance}</h3>

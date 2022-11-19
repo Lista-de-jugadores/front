@@ -4,9 +4,9 @@
   justify-items: center;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: -100px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: -150px;
 }
 
 .cardplayer-graph {
@@ -32,7 +32,7 @@
   bottom: 175px;
   font-family: 'Handlee';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
    color: #FFFFFF;
    z-index: 2;
@@ -68,4 +68,8 @@
   bottom: 345px;
   width: 120px;
   left: 65px;
+}
+
+.cardplayer-card{
+  width: 260px;
 }
