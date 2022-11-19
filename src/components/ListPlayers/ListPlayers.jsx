@@ -1,6 +1,4 @@
 import './ListPlayers.css';
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
 import CardPlayer from '../CardPlayer/CardPlayer';
 
 const ListPlayers = () => {

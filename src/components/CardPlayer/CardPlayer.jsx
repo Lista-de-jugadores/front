@@ -1,6 +1,4 @@
 import './CardPlayer.css';
-// import { useState } from 'react';
-// import { useSelector } from 'react-redux';
 import card from '../../assets/card.svg';
 import graph from '../../assets/graph.svg';
 
