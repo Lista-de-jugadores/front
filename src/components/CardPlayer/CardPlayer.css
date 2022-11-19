@@ -1,0 +1,71 @@
+.cardplayer-container {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: -100px;
+}
+
+.cardplayer-graph {
+  position: relative;
+  bottom: 85px;
+  z-index: 1;
+}
+
+.cardplayer-name {
+  position: relative;
+  margin: auto;
+  bottom: 275px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+   color: #FFFFFF;
+}
+
+.cardplayer-balance{
+  position: relative;
+  margin: auto;
+  bottom: 175px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+   color: #FFFFFF;
+   z-index: 2;
+}
+
+.cardplayer-id{
+  position: relative;
+  margin: auto;
+  bottom: 190px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  right: 70px;
+}
+
+.cardplayer-status{
+  position: relative;
+  margin: auto;
+  bottom: 290px;
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  right: 50px;
+}
+
+.cardplayer-avatar{
+  position: relative;
+  margin: auto;
+  bottom: 345px;
+  width: 120px;
+  left: 65px;
+}

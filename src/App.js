@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
-
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import ListPlayers from './components/ListPlayers/ListPlayers';
 
 function App() {
   return (
-    <div className="App">
-hola
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<ListPlayers />} exact />
+      </Routes>
+    </>
   );
 }
 

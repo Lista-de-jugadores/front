@@ -1,0 +1,26 @@
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 20%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.navbar-search {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 661px;
+  height: 30px;
+}
+
+.navbar-h1 {
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
