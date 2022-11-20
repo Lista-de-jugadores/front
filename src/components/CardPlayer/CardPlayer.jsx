@@ -3,7 +3,7 @@ import card from '../../assets/card.svg';
 import graph from '../../assets/graph.svg';
 
 const CardPlayer = ({ name, id, balance, status, avatar }) => {
-  return (
+   return (
     <>
       <div className='cardplayer-container'>
         <img className='cardplayer-card' src={card} alt={"img"} />
@@ -12,7 +12,7 @@ const CardPlayer = ({ name, id, balance, status, avatar }) => {
         <h3 className='cardplayer-id' >ID:{id}</h3>
         <h3 className='cardplayer-balance' >{balance}</h3>
         <h3 className='cardplayer-status' >{status}</h3>
-        <img className='cardplayer-avatar' src={avatar} alt={"img"} />
+        <img className='cardplayer-avatar' src={`https://${avatar}`} alt={"img"} />
       </div>
     </>
   );
