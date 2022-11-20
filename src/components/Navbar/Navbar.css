@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-right: 20%;
   margin-top: 20px;
   margin-bottom: 25px;
 }
@@ -13,7 +12,7 @@
   display: flex;
   background: #FFFFFF;
   border-radius: 8px;
-  width: 661px;
+  width: 400px;
   height: 30px;
 }
 

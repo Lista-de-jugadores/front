@@ -1,14 +1,21 @@
-// Importa las action types acá
+import {
+  GET_PLAYERS
+} from '../constant/constans';
+
 
 const initialState = {
-  products: [],
-  productDetail: {},
+  players: [],
 };
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-   
+    case GET_PLAYERS:
+      return {
+        ...state,
+        players: action.payload
       };
-   
+    default:
+      return state;
+  };
 }
-  export default rootReducer;
+export default rootReducer;
