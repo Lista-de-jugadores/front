@@ -1,5 +1,4 @@
 import './PaginateButton.css';
-import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPlayers } from '../../redux/actions';
 
@@ -17,7 +16,7 @@ const PaginateButton = ({ input }) => {
   const nextPage = () => {
     if (page === null && hasnextpage === true) {
       dispatch(getPlayers(input, 1))
-    } else if (page != null && hasnextpage == true) {
+    } else if (page != null && hasnextpage === true) {
       dispatch(getPlayers(input, nextpage))
     }
   }
