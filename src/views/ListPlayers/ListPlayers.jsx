@@ -21,7 +21,7 @@ const ListPlayers = () => {
               <CardPlayer
                 key={player.id}
                 id={player.id}
-                name={player.nickname}
+                nickname={player.nickname}
                 status={player.status}
                 balance={player.balance}
                 avatar={player.avatar}
@@ -29,7 +29,6 @@ const ListPlayers = () => {
             )
           )
         }
-
       </div>
          </>
   );

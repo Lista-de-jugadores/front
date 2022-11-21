@@ -1,15 +1,13 @@
-import {
-  GET_PLAYERS
-} from '../constant/constans';
+import { GET_PLAYERS } from '../constant/constans';
 
-export function getPlayers(input,page) {
+export function getPlayers(input, page) {
   return async function (dispatch) {
     try {
       const data = await fetch(
-        `https://back-production-70cd.up.railway.app/players?input=${input||""}&page=${page}`
+        `https://back-production-70cd.up.railway.app/players?input=${input}&page=${page}`
       );
       const res = await data.json();
-          dispatch({
+      dispatch({
         type: GET_PLAYERS,
         payload: res
       });

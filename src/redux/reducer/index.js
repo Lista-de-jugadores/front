@@ -1,7 +1,4 @@
-import {
-  GET_PLAYERS
-} from '../constant/constans';
-
+import { GET_PLAYERS } from '../constant/constans'
 
 const initialState = {
   players: [],
@@ -18,4 +15,5 @@ const rootReducer = (state = initialState, action) => {
       return state;
   };
 }
-export default rootReducer;
+
+export default rootReducer

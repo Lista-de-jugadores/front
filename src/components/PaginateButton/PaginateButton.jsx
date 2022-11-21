@@ -2,7 +2,6 @@ import './PaginateButton.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPlayers } from '../../redux/actions';
 
-
 const PaginateButton = ({ input }) => {
 
   const dispatch = useDispatch();

@@ -11,28 +11,29 @@
 
 .cardplayer-graph {
   position: relative;
-  bottom: 85px;
+  bottom: 90px;
   z-index: 1;
+  transform: scale(115%);
 }
 
-.cardplayer-name {
+.cardplayer-nickname {
   position: relative;
   margin: auto;
-  bottom: 275px;
+  bottom: 295px;
   font-family: 'Handlee';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 27px;
    color: #FFFFFF;
 }
 
 .cardplayer-balance{
   position: relative;
   margin: auto;
-  bottom: 175px;
+  bottom: 189px;
   font-family: 'Handlee';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
    color: #FFFFFF;
    z-index: 2;
@@ -41,13 +42,13 @@
 .cardplayer-id{
   position: relative;
   margin: auto;
-  bottom: 190px;
+  bottom: 209px;
   font-family: 'Handlee';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
-  right: 70px;
+  right: 73px;
 }
 
 .cardplayer-status{
@@ -65,11 +66,11 @@
 .cardplayer-avatar{
   position: relative;
   margin: auto;
-  bottom: 345px;
-  width: 120px;
-  left: 65px;
+  bottom: 369px;
+  width: 135px;
+  left: 75px;
 }
 
 .cardplayer-card{
-  width: 260px;
+  width: 280px;
 }
