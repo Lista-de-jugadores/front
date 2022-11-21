@@ -22,7 +22,7 @@ const SearchBar = () => {
     <>
       <div className='searchbar-container'>
         <h1 className='searchbar-h1'>Player List</h1>
-        <input className='searchbar-search' type={"search"} onChange={handleinputchange}></input>
+        <input className='searchbar-search' placeholder='insert nickname or ID' type={"search"} onChange={handleinputchange}></input>
         <button className='searchbar-button' type='submit' onClick={submitsearch}>SEARCH</button>
       </div>
       <PaginateButton input={input}/>

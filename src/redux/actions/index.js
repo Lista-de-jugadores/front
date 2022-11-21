@@ -4,7 +4,7 @@ export function getPlayers(input, page) {
   return async function (dispatch) {
     try {
       const data = await fetch(
-        `https://back-production-70cd.up.railway.app/players?input=${input}&page=${page}`
+        `${process.env.REACT_APP_API_URL}/players?input=${input}&page=${page}`
       );
       const res = await data.json();
       dispatch({
