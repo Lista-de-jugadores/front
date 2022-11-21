@@ -1,12 +1,13 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/SearchBar/SearchBar';
 import ListPlayers from './views/ListPlayers/ListPlayers';
+import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <SearchBar />
       <Routes>
         <Route path="/" element={<ListPlayers />} exact />
       </Routes>

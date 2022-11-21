@@ -9,13 +9,12 @@ const ListPlayers = () => {
   const players = useSelector((state) => state.players.docs);
 
   useEffect(() => {
-    
-        dispatch(getPlayers())
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    dispatch(getPlayers("",0))
+   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
-      <div className='container-listplayers'>
+            <div className='container-listplayers'>
         {players &&
           players.map(
             (player) => (
@@ -32,7 +31,7 @@ const ListPlayers = () => {
         }
 
       </div>
-    </>
+         </>
   );
 };
 
