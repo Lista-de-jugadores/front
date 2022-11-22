@@ -12,7 +12,7 @@ const CardPlayer = ({ nickname, id, balance, status, avatar }) => {
         <h3 className='cardplayer-id' >ID:{id}</h3>
         <h3 className='cardplayer-balance' >{balance}</h3>
         <h3 className='cardplayer-status' >{status}</h3>
-        <img className='cardplayer-avatar' src={`https://${avatar}`} alt={"img"} />
+        <img className='cardplayer-avatar' src={`https://${avatar}`} alt={avatar} />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { getPlayers } from '../../redux/actions';
 import PaginateButton from '../PaginateButton/PaginateButton';
 
-const SearchBar = () => {
+const SearchBar = ({pageinfo}) => {
   const [input, setInput] = useState("")
   const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ const SearchBar = () => {
         <input className='searchbar-search' placeholder='insert nickname or ID' type={"search"} onChange={handleinputchange}></input>
         <button className='searchbar-button' type='submit' onClick={submitsearch}>SEARCH</button>
       </div>
-      <PaginateButton input={input}/>
+      <PaginateButton input={input} pageinfo={pageinfo}/>
     </>
   );
 };

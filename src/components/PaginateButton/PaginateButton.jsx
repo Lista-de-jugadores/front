@@ -2,10 +2,10 @@ import './PaginateButton.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPlayers } from '../../redux/actions';
 
-const PaginateButton = ({ input }) => {
+const PaginateButton = ({ input, pageinfo }) => {
 
   const dispatch = useDispatch();
-  const paginateinfo = useSelector((state) => state.players)
+  const paginateinfo = pageinfo
   const page = paginateinfo.page
   const hasnextpage = paginateinfo.hasNextPage
   const hasprevpage = paginateinfo.hasPrevPage
@@ -21,7 +21,7 @@ const PaginateButton = ({ input }) => {
   }
 
   const prevPage = () => {
-    if ( hasprevpage === true) {
+    if (hasprevpage === true) {
       dispatch(getPlayers(input, prevpage))
     }
   }
@@ -29,8 +29,8 @@ const PaginateButton = ({ input }) => {
   return (
     <>
       <div className='paginatebutton-container'>
-       {(hasprevpage === true) && <button className='paginatebutton-button' type='submit' onClick={prevPage} >PREV</button> }
-       {(hasnextpage === true) && <button className='paginatebutton-button' type='submit' onClick={nextPage} >NEXT</button> }
+        {(hasprevpage === true) && <button className='paginatebutton-button' id="paginatebutton-prev" onClick={prevPage} >PREV</button>}
+        {(hasnextpage === true) && <button className='paginatebutton-button' id="paginatebutton-next" onClick={nextPage} >NEXT</button>}
       </div>
     </>
   );
