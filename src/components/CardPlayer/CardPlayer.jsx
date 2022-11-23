@@ -1,9 +1,9 @@
-import './CardPlayer.css';
-import card from '../../assets/card.svg';
-import graph from '../../assets/graph.svg';
+import './CardPlayer.css'
+import card from '../../assets/card.svg'
+import graph from '../../assets/graph.svg'
 
 const CardPlayer = ({ nickname, id, balance, status, avatar }) => {
-   return (
+  return (
     <>
       <div className='cardplayer-container'>
         <img className='cardplayer-card' src={card} alt={"img"} />
@@ -15,7 +15,7 @@ const CardPlayer = ({ nickname, id, balance, status, avatar }) => {
         <img className='cardplayer-avatar' src={`https://${avatar}`} alt={avatar} />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CardPlayer;
+export default CardPlayer

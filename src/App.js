@@ -1,6 +1,6 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import ListPlayers from './views/ListPlayers/ListPlayers';
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import ListPlayers from './views/ListPlayers/ListPlayers'
 
 function App() {
   return (
@@ -12,5 +12,5 @@ function App() {
   );
 }
 
-export default App;
+export default App
 

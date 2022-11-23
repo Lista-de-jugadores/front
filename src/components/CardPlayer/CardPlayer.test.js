@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 import "@testing-library/jest-dom/extend-expect"
 import { render } from "@testing-library/react"
-import CardPlayer from "./CardPlayer";
-import {player}  from "./CardPlayerMock"
+import CardPlayer from "./CardPlayer"
+import { player } from "./CardPlayerMock"
 
 test('Render CardPlayer component', () => {
 
@@ -13,12 +13,11 @@ test('Render CardPlayer component', () => {
             status={player.status}
             balance={player.balance}
             avatar={player.avatar}
-        />)     
+        />)
 
-    component.getByText("ID:1")
-    component.getByText("ooy eqrceli")
-    component.getByText("rlñlw brhrka")
-    component.getByText("498724")
+    component.getByRole('heading', { name: /id:1/i })
+    component.getByRole('heading', { name: /ooy eqrceli/i })
+    component.getByRole('heading', { name: /rlñlw brhrka/i })
+    component.getByRole('heading', { name: /498724/i })
     component.getByAltText("drive.google.com/thumbnail?id=17fBzEwLjVC4wbHBi1O64PA-D-i8G_Z4b")
-    
- })
+})

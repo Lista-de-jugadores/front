@@ -36,7 +36,7 @@
 }
 
 @media screen and (max-width: 525px) {
-  .searchbar-button  {
-  margin-top: 15px;
+  .searchbar-button {
+    margin-top: 15px;
   }
 }

@@ -2,7 +2,7 @@ import { GET_PLAYERS } from '../constant/constans'
 
 const initialState = {
   players: [],
-};
+}
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -12,8 +12,8 @@ const rootReducer = (state = initialState, action) => {
         players: action.payload
       };
     default:
-      return state;
-  };
+      return state
+  }
 }
 
 export default rootReducer

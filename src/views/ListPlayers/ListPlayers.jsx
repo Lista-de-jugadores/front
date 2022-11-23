@@ -1,14 +1,15 @@
-import './ListPlayers.css';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import CardPlayer from '../../components/CardPlayer/CardPlayer';
-import SearchBar from '../../components/SearchBar/SearchBar';
-import { getPlayers } from '../../redux/actions';
+import './ListPlayers.css'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import CardPlayer from '../../components/CardPlayer/CardPlayer'
+import SearchBar from '../../components/SearchBar/SearchBar'
+import { getPlayers } from '../../redux/actions'
 
 const ListPlayers = () => {
-  const dispatch = useDispatch();
-  const players = useSelector((state) => state.players.docs);
-  const pageinfo = useSelector((state) => state.players);
+
+  const dispatch = useDispatch()
+  const players = useSelector((state) => state.players.docs)
+  const pageinfo = useSelector((state) => state.players)
 
   useEffect(() => {
     dispatch(getPlayers("", 0))
@@ -16,7 +17,7 @@ const ListPlayers = () => {
 
   return (
     <>
-    <SearchBar pageinfo={pageinfo}/>
+      <SearchBar pageinfo={pageinfo} />
       <div className='container-listplayers'>
         {players &&
           players.map(
@@ -34,7 +35,7 @@ const ListPlayers = () => {
         }
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ListPlayers;
+export default ListPlayers
