@@ -36,7 +36,6 @@ describe('PaginateButton', () => {
   })
 
 
-
   test('The PREV-NEXT button is not rendered in a ID search', async () => {
     server.resetHandlers(
       rest.get('/playersinput1', errorMock

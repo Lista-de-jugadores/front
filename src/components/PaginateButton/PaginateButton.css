@@ -8,12 +8,64 @@
 .paginatebutton-button {
     width: 117px;
     height: 41px;
-    background: radial-gradient(91.46% 271.45% at 50% 50%, #9c2b76 0%, #3A1351 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-color: darkgoldenrod;
     border-radius: 8px;
     color: white;
     margin: 15px;
+    background: linear-gradient(162deg, #2d0c30, #9c2b76, #2d0c30);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.paginatebutton-button:hover {
+    box-shadow: inset 0 0 15px #f8a10060
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 14% 0%
+    }
+
+    50% {
+        background-position: 87% 100%
+    }
+
+    100% {
+        background-position: 14% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 14% 0%
+    }
+
+    50% {
+        background-position: 87% 100%
+    }
+
+    100% {
+        background-position: 14% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 14% 0%
+    }
+
+    50% {
+        background-position: 87% 100%
+    }
+
+    100% {
+        background-position: 14% 0%
+    }
 }
 
 .paginatebutton-button-hidden {
