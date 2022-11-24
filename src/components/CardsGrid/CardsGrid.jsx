@@ -1,5 +1,6 @@
 import './CardsGrid.css'
 import CardPlayer from '../CardPlayer/CardPlayer'
+import CardNotPlayer from '../CardNotPlayer/CardNotPlayer'
 
 const CardsGrid = ({ players }) => {
   return (
@@ -19,6 +20,7 @@ const CardsGrid = ({ players }) => {
             )
           )
         }
+        {players && !players.length && <CardNotPlayer/>}
       </div>
     </>
   )
